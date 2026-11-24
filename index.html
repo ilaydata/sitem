@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İlayda — Kişisel Site</title>
+  <meta name="description" content="İlayda'nın kişisel web sitesi: müzik, spor ve yemek üzerine ilgi alanları.">
+  <link rel="icon" type="image/jpeg" href="resimler/maskot.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="icerige-gec" href="#icerik">İçeriğe geç</a>
+
+  <header class="ust-menu">
+    <div class="kapsayici menu-ic">
+      <a href="#kapak" class="marka">İLAYDA</a>
+
+      <button
+        type="button"
+        class="menu-dugmesi"
+        id="menu-dugmesi"
+        aria-expanded="false"
+        aria-controls="menu-listesi"
+      >
+        MENÜ
+      </button>
+
+      <nav class="navigasyon" aria-label="Ana menü">
+        <ul class="menu-listesi" id="menu-listesi">
+          <li><a href="#kapak" class="menu-baglantisi aktif">Kapak</a></li>
+          <li><a href="#hakkimda" class="menu-baglantisi">Hakkımda</a></li>
+          <li><a href="#ilgi-alanlarim" class="menu-baglantisi">İlgi Alanlarım</a></li>
+          <li><a href="#iletisim" class="menu-baglantisi">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <section id="kapak" class="bolum kapak-bolumu" aria-labelledby="kapak-baslik">
+      <div class="kapsayici kapak-duzen">
+        <div class="kapak-kutu">
+          <p class="etiket etiket-vurgu">KİŞİSEL SİTE</p>
+          <h1 id="kapak-baslik">İlayda</h1>
+          <p class="kapak-metin">
+            Üniversite yolculuğumda müziğin ritmini, sporun enerjisini ve iyi yemeğin keyfini bir araya getiriyorum.
+          </p>
+          <div class="kapak-eylemler">
+            <a href="#hakkimda" class="dugme dugme-vurgu">Hakkımda</a>
+            <a href="#ilgi-alanlarim" class="dugme dugme-koyu">İlgi Alanlarım</a>
+          </div>
+        </div>
+
+        <figure class="kapak-gorsel-kutu">
+          <img
+            src="resimler/kapak.jpg"
+            alt="Tepeden spor sahaları, yemek karavanları ve müzik sahnesinin bulunduğu canlı bir vadiyi izleyen mercan ve lacivert tonlarında kedi illüstrasyonu"
+            width="1600"
+            height="900"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section id="hakkimda" class="bolum hakkimda-bolumu" aria-labelledby="hakkimda-baslik">
+      <div class="kapsayici hakkimda-duzen">
+        <figure class="maskot-kutu">
+          <img
+            src="resimler/maskot.jpg"
+            alt="Koyu lacivert zemin üzerinde boynunda fular olan, gülümseyerek el sallayan mercan rengi sevimli kedi maskotu illüstrasyonu"
+            width="1024"
+            height="1024"
+          >
+        </figure>
+
+        <div class="hakkimda-kutu">
+          <p class="etiket etiket-koyu">HAKKIMDA</p>
+          <h2 id="hakkimda-baslik">Merhaba, ben İlayda</h2>
+          <p class="hakkimda-metin">
+            Üniversite eğitimime devam eden ve yeni şeyler keşfetmekten keyif alan bir öğrenciyim.
+            Derslerimin dışında kalan zamanlarımda müzik dinlemek, sporla hareket etmek ve farklı yemekler tatmak bana büyük bir enerji veriyor.
+            Bu sayfada kendimden kısaca bahsediyor ve günlük hayatıma renk katan bu üç temel ilgi alanımı paylaşıyorum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ilgi-alanlarim" class="bolum ilgi-bolumu" aria-labelledby="ilgi-baslik">
+      <div class="kapsayici">
+        <div class="bolum-baslik-grubu">
+          <p class="etiket etiket-vurgu">NELERDEN HOŞLANIRIM</p>
+          <h2 id="ilgi-baslik">İlgi Alanlarım</h2>
+        </div>
+
+        <div class="kart-izgara">
+          <article class="ilgi-karti kart-vurgu">
+            <div class="kart-gorsel-cerceve">
+              <img
+                src="resimler/kart-3.jpg"
+                alt="Etrafında müzik notaları uçuşurken neşeyle akustik gitar çalan mercan ve lacivert tonlarında kedi illüstrasyonu"
+                width="1024"
+                height="1024"
+                loading="lazy"
+              >
+            </div>
+            <div class="kart-icerik">
+              <span class="kart-numara">01</span>
+              <h3>Müzik</h3>
+              <p>
+                Günün her anına eşlik eden melodiler, yeni keşfedilen parçalar ve ritmin verdiği dinginlik benim için vazgeçilmez.
+              </p>
+            </div>
+          </article>
+
+          <article class="ilgi-karti kart-koyu">
+            <div class="kart-gorsel-cerceve">
+              <img
+                src="resimler/kart-2.jpg"
+                alt="Alnında saç bandı ve üzerinde formayla basketbol topu süren koyu lacivert ve mercan tonlarında kedi illüstrasyonu"
+                width="1024"
+                height="1024"
+                loading="lazy"
+              >
+            </div>
+            <div class="kart-icerik">
+              <span class="kart-numara">02</span>
+              <h3>Spor</h3>
+              <p>
+                Hareket halinde kalmak, enerjimi tazelemek ve dinamik bir tempo yakalamak günlük rutinimin en keyifli parçası.
+              </p>
+            </div>
+          </article>
+
+          <article class="ilgi-karti kart-acik">
+            <div class="kart-gorsel-cerceve">
+              <img
+                src="resimler/kart-1.jpg"
+                alt="Buharı tüten çubuklu bir ramen kasesinin başında neşeyle gülümseyen kedi illüstrasyonu"
+                width="1024"
+                height="1024"
+                loading="lazy"
+              >
+            </div>
+            <div class="kart-icerik">
+              <span class="kart-numara">03</span>
+              <h3>Yemek</h3>
+              <p>
+                Yeni tatlar denemek, özenle hazırlanmış sofraların keyfini çıkarmak ve farklı mutfakları keşfetmek beni çok mutlu ediyor.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="bolum iletisim-bolumu" aria-labelledby="iletisim-baslik">
+      <div class="kapsayici">
+        <div class="iletisim-kutu">
+          <p class="etiket etiket-vurgu">İLETİŞİM</p>
+          <h2 id="iletisim-baslik">Bana Ulaş</h2>
+          <p class="iletisim-metin">
+            Merhaba demek ya da ortak ilgi alanlarımız hakkında konuşmak istersen bana e-posta gönderebilirsin.
+          </p>
+          <div class="iletisim-eylemler">
+            <a href="mailto:ilaydatahirogluu@gmail.com" class="dugme dugme-vurgu eposta-baglantisi">
+              ilaydatahirogluu@gmail.com
+            </a>
+            <button
+              type="button"
+              class="dugme dugme-koyu"
+              id="kopyala-dugmesi"
+              data-eposta="ilaydatahirogluu@gmail.com"
+            >
+              E-postayı Kopyala
+            </button>
+          </div>
+          <p class="kopyala-durum" id="kopyala-durum" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="alt-bilgi">
+    <div class="kapsayici alt-bilgi-ic">
+      <p class="alt-sahip">İlayda</p>
+      <p class="yapay-zeka-notu">Bu sitedeki görseller yapay zekâ ile üretildi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
